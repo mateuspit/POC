@@ -1,18 +1,19 @@
-import { Task } from "../protocols";
+import { Task, ID } from "../protocols";
 import * as toDoRepository from "../repositories/toDo.repositories";
 
-export function createTask(task: Task){
+export function createTask(task: Task) {
     return toDoRepository.createTask(task);
 }
 
-export function readTask(){
+export function readTask() {
     return toDoRepository.readTask();
 }
 
-export function updateTask(task: Task){
-    return toDoRepository.createTask(task);
+export function updateTask(id: ID, newTask: Task) {
+    return toDoRepository.updateTask(id, newTask);
+    //return toDoRepository.createTask(id);
 }
 
-export function deleteTask(task: Task){
-    return toDoRepository.createTask(task);
+export function deleteTask(id: ID) {
+    return toDoRepository.deleteTask(id);
 }

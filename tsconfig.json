@@ -1,13 +1,18 @@
 {
     "compilerOptions": {
-      "target": "ES6",
+     
+      "target": "ES2016",
       "module": "commonjs",
       "noEmitOnError": true,
       "esModuleInterop": true,
       "noImplicitAny": true,
-      "outDir": "dist",
+      "skipLibCheck": true,
+      "removeComments": true,
       "strict": true,
-      "removeComments": true
-    },
-    "include": ["src/**/*.ts"]
-  }
+      "forceConsistentCasingInFileNames": true
+      }, 
+      "ts-node": {
+        "esm": true
+      }, 
+       
+}
